@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D0E621E1F8DC9AB00DDE23B /* DroppableTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E621D1F8DC9AA00DDE23B /* DroppableTabBarTests.swift */; };
+		4D0E62201F8DCF2700DDE23B /* Item1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E621F1F8DCF2700DDE23B /* Item1TableViewController.swift */; };
+		4D0E62221F8DCF2D00DDE23B /* Item2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E62211F8DCF2D00DDE23B /* Item2TableViewController.swift */; };
+		4D0E62241F8DCF3400DDE23B /* Item3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0E62231F8DCF3400DDE23B /* Item3TableViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* TabBarController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -35,11 +38,14 @@
 		26F40B99BB12620CB88C09AB /* Pods_DroppableTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroppableTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0067BE6DE566F400BE3A40 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4D0E621D1F8DC9AA00DDE23B /* DroppableTabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DroppableTabBarTests.swift; path = ../../Tests/DroppableTabBarTests/DroppableTabBarTests.swift; sourceTree = "<group>"; };
+		4D0E621F1F8DCF2700DDE23B /* Item1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1TableViewController.swift; sourceTree = "<group>"; };
+		4D0E62211F8DCF2D00DDE23B /* Item2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item2TableViewController.swift; sourceTree = "<group>"; };
+		4D0E62231F8DCF3400DDE23B /* Item3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item3TableViewController.swift; sourceTree = "<group>"; };
 		540E70AA691736A56756E9BC /* Pods-DroppableTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppableTabBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DroppableTabBar_Example/Pods-DroppableTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DroppableTabBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroppableTabBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -105,11 +111,14 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* TabBarController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				4D0E621F1F8DCF2700DDE23B /* Item1TableViewController.swift */,
+				4D0E62211F8DCF2D00DDE23B /* Item2TableViewController.swift */,
+				4D0E62231F8DCF3400DDE23B /* Item3TableViewController.swift */,
 			);
 			name = "Example for DroppableTabBar";
 			path = DroppableTabBar;
@@ -383,7 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4D0E62241F8DCF3400DDE23B /* Item3TableViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* TabBarController.swift in Sources */,
+				4D0E62221F8DCF2D00DDE23B /* Item2TableViewController.swift in Sources */,
+				4D0E62201F8DCF2700DDE23B /* Item1TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
