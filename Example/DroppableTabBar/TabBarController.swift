@@ -8,6 +8,7 @@
 
 import UIKit
 import MobileCoreServices
+import DroppableTabBar
 
 extension Array where Element == Array<String> {
 
@@ -16,7 +17,9 @@ extension Array where Element == Array<String> {
     }
 
     func dragItems(for indexPath: IndexPath) -> [UIDragItem] {
-        let placeName = self[indexPath.section][indexPath.row]
+        guard let placeName = self[safe: indexPath.section]?[safe: indexPath.row] else {
+            return []
+        }
 
         let data = placeName.data(using: .utf8)
         let itemProvider = NSItemProvider()
@@ -31,9 +34,14 @@ extension Array where Element == Array<String> {
         ]
     }
 
-    func addItem(item: String, at indexPath: IndexPath) {
+    mutating func addItem(item: String, at indexPath: IndexPath) {
         var sectionArray = self[safe: indexPath.section] ?? [String]()
-        sectionArray[indexPath.row] = item
+        if indexPath.row > sectionArray.count {
+            sectionArray.append(item)
+        } else {
+            sectionArray.insert(item, at: indexPath.row)
+        }
+        self[safe: indexPath.section] = sectionArray
     }
 
     mutating func swapAt(at sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
@@ -42,7 +50,7 @@ extension Array where Element == Array<String> {
             guard let sourceItem = sourceSection[safe: sourceIndexPath.row] else { return }
             sourceSection.insert(sourceItem, at: destinationIndexPath.row)
             sourceSection.remove(at: sourceIndexPath.row)
-            self[sourceIndexPath.section] = sourceSection
+            self[safe: sourceIndexPath.section] = sourceSection
             return
         }
 
@@ -54,21 +62,19 @@ extension Array where Element == Array<String> {
         destinationSection.insert(sourceItem, at: destinationIndexPath.row)
         sourceSection.remove(at: sourceIndexPath.row)
 
-        self[sourceIndexPath.section] = sourceSection
-        self[destinationIndexPath.section] = destinationSection
+        self[safe: sourceIndexPath.section] = sourceSection
+        self[safe: destinationIndexPath.section] = destinationSection
     }
 }
 
-class TabBarController: UITabBarController {
+class TabBarController: DroppableTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
-
 }

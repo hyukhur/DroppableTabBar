@@ -6,7 +6,7 @@ class DroppableTabBarTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(DroppableTabBar().text, "Hello, World!")
+//        XCTAssertEqual(DroppableTabBar().text, "Hello, World!")
     }
 
 

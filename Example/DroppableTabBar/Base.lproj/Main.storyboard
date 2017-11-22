@@ -21,6 +21,10 @@
                         <segue destination="NOG-HP-Vby" kind="relationship" relationship="viewControllers" id="XYT-v1-4zA"/>
                         <segue destination="Aqh-ft-mS8" kind="relationship" relationship="viewControllers" id="5rZ-6f-sKZ"/>
                         <segue destination="ZhZ-V3-GTf" kind="relationship" relationship="viewControllers" id="m58-YW-FRL"/>
+                        <segue destination="c05-0C-PYv" kind="relationship" relationship="viewControllers" id="h3b-Vn-RmG"/>
+                        <segue destination="K8o-AD-Gej" kind="relationship" relationship="viewControllers" id="kva-2X-4Zl"/>
+                        <segue destination="ffE-ss-NQm" kind="relationship" relationship="viewControllers" id="JpG-8t-gDB"/>
+                        <segue destination="KQ9-lc-SYt" kind="relationship" relationship="viewControllers" id="ky1-Px-SH6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M54-id-LTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,6 +117,122 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXu-Yl-pRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="646" y="351"/>
+        </scene>
+        <!--Item4-->
+        <scene sceneID="Cka-8X-OVw">
+            <objects>
+                <tableViewController id="c05-0C-PYv" customClass="Item3TableViewController" customModule="DroppableTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="06a-hJ-Rnf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="2vb-Tk-YcU">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2vb-Tk-YcU" id="meP-o1-OJJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c05-0C-PYv" id="lYw-BX-hLA"/>
+                            <outlet property="delegate" destination="c05-0C-PYv" id="N1U-Fq-jZi"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item4" id="SoF-vG-r6k"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzN-hN-X5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="1027"/>
+        </scene>
+        <!--Item5-->
+        <scene sceneID="y19-Y4-wwV">
+            <objects>
+                <tableViewController id="K8o-AD-Gej" customClass="Item3TableViewController" customModule="DroppableTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QfX-xk-C8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="8kH-Wl-TC1">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8kH-Wl-TC1" id="l59-nl-HHr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="K8o-AD-Gej" id="e9V-Le-fhW"/>
+                            <outlet property="delegate" destination="K8o-AD-Gej" id="ACC-Ow-seB"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item5" id="N6o-E6-7Ay"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGf-FY-hmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="720"/>
+        </scene>
+        <!--Item6-->
+        <scene sceneID="hVr-oP-Ebl">
+            <objects>
+                <tableViewController id="ffE-ss-NQm" customClass="Item3TableViewController" customModule="DroppableTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="px4-qx-6PJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="h8G-gl-O0s">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h8G-gl-O0s" id="BFr-eo-Ffa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ffE-ss-NQm" id="if1-vT-nBo"/>
+                            <outlet property="delegate" destination="ffE-ss-NQm" id="fuH-tf-BcH"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item6" id="rhv-Pa-TyJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yx-nB-GJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327" y="1383"/>
+        </scene>
+        <!--Item7-->
+        <scene sceneID="lpI-bU-lpF">
+            <objects>
+                <tableViewController id="KQ9-lc-SYt" customClass="Item3TableViewController" customModule="DroppableTabBar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="At7-d0-VUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell3" id="vM2-M4-Bag">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vM2-M4-Bag" id="YyI-Hm-Kua">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KQ9-lc-SYt" id="QxT-Vr-Fdb"/>
+                            <outlet property="delegate" destination="KQ9-lc-SYt" id="Kiw-ok-cYf"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item7" id="CTA-DX-8sP"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fei-YX-UeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="1682"/>
         </scene>
     </scenes>
 </document>

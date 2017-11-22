@@ -14,7 +14,8 @@ extension Array {
             return indices ~= index ? self[index] : nil
         }
         set {
-            guard let element = newValue else { return }
+            guard let element = newValue,
+                indices ~= index else { return }
             self[index] = element
         }
     }
